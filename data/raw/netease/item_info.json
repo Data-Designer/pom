@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "xxxxid"
+  },
+  "buytype": 2,
+  "firstclass": 4,
+  "item_id": 183,
+  "limitgift": 1,
+  "limittype": 1,
+  "lvlimit": 50,
+  "name": "xxx_name",
+  "oncecntlimit": 999,
+  "order": 1,
+  "price": 240,
+  "refreshcycle": 1,
+  "refreshtype": 2,
+  "secclass": 44,
+  "totallimitbuycount": 20,
+  "attribute": [
+    "Attack",
+    "Defense"
+  ],
+  "originalprice": 0,
+  "viplimit": 0,
+  "limitbuycount": 0
+}]
