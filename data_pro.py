@@ -150,12 +150,7 @@ def random_list(size, start=1, end=300):
 
 def netease_preprocess():
     print("===============Processing Netease Dataset==================")
-    # def random_samples(df, k):
-    #     for index in range(len(df)):
-    #         if random.choice([True, False]):  # 随机决定是否插入
-    #             df.at[index, 'his_item'].extend(random_list(k))  # 插入 col1 的新列表
-    #             df.at[index, 'his_ts'].extend(random_list(k, start=1, end=1))  # 插入 col2 的新列表
-    #     return df
+
 
     def remove_duplicate(row):
         """his去重,consist为连续去重，all为完全去重"""
@@ -248,14 +243,7 @@ def netease_preprocess():
             itemid = itemnum
             itemmap[asin] = itemid
         User[userid].append([time, itemid])  # 每个user id存储的是[item, timestamp]存储的是时间戳{user:[[time, id],[time. id]]}
-    # sort reviews in User according to time
-    #
-    # for user in User.keys():
-    #     for index, i in enumerate(User[user]):
-    #         if index %3==0: # 每三个插入一个随机数,保证随机行为
-    #             User[userid].append([1, random.randint(1, 300)])
-    #
-    # print('random 插入成功')
+
 
 
     for userid in User.keys():
@@ -272,9 +260,6 @@ def netease_preprocess():
         for index, i in enumerate(User[user]):
             f.write('%d %d %s\n' % (user, i[1], i[0]))
 
-            # if random.choice([True, False]): # 每三个插入一个随机数,保证随机行为
-            #     f.write('%d %d %s\n' % (user, random.randint(1, 300),  i[0]))
-
     f.close()
 
     f = open(root_to + dataset_name + '.txt', 'w') # 存储user-id pair
@@ -282,8 +267,6 @@ def netease_preprocess():
         for index, i in enumerate(User[user]):
             f.write('%d %d\n' % (user, i[1]))
             #
-            # if random.choice([True, False]): # 每三个插入一个随机数,保证随机行为
-            #     f.write('%d %d\n' % (user, random.randint(1, 300)))
 
     f.close()
 
@@ -805,7 +788,7 @@ def win_sample_function(user_train, usernum, itemnum, cxtdict, cxtsize, batch_si
     def sample_for():
         """正向padding,适用于一些RNN-based的基线"""
         user = np.random.randint(1, usernum + 1)
-        index = np.random.randint(0, len(new_user_train[user]))  # 随机选择一个长度
+        index = np.random.randint(0, len(new_user_train[user]))
         while len(new_user_train[user][index]) <= 1: user = np.random.randint(1,
                                                                               usernum + 1)  # 对于train中只有一个item的用户，重新采样；【因为其如果有三次的话可能有两次分在了test和valid里，训练只有一次，这样没有办法采集positive的样本】
         seq = np.zeros([maxlen], dtype=np.int32)
