@@ -4,7 +4,7 @@
 """
 # File       : graph.py
 # Time       ：11/6/2024 8:27 am
-# Author     ：Chuang Zhao
+# Author     ：XXXXX
 # version    ：python 
 # Description：预处理数据，构建图
 """
@@ -31,8 +31,8 @@ from tqdm import trange
 class CommonArgs:
     NUM_WALKS_PER_NODE = 7
     WALK_LENGTH = 4
-    root = '/home/czhaobo/HyperHealth/src/pom/data/ready/'
-    root_to = '/home/czhaobo/HyperHealth/src/pom/data/ready/'
+    root = '/home/xxx/HyperHealth/src/pom/data/ready/'
+    root_to = '/home/xxx/HyperHealth/src/pom/data/ready/'
 
     NUM_WALKS_PER_NODE = 100  # 每个节点随机游走的次数
     WALK_LENGTH = 4  # MetaPath*it的长度,用于采样
@@ -559,6 +559,6 @@ def convert_name2id(path):
 
 if __name__ == '__main__':
     # 预处理
-    convert_name2id('/home/czhaobo/pom/data/ready/video/')
+    convert_name2id('/home/xxx/pom/data/ready/video/')
 
 

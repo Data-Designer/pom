@@ -4,7 +4,7 @@
 """
 # File       : main.py
 # Time       ：13/5/2024 10:05 am
-# Author     ：Chuang Zhao
+# Author     ：XXXX
 # version    ：python 
 # Description：
 """
@@ -72,9 +72,9 @@ def run_single_config(name):
     UserFeatures = np.random.randn(usernum, opt.hidden_units)  # 10个商品
     GraphFeatures = np.random.randn(itemnum+1, opt.hidden_units)  # 因为是从0开始编码的,所以要加衣
     # print(GraphFeatures.shape)
-    # GraphFeatures = np.loadtxt('/home/czhaobo/pom/data/ready/'+opt.dataset_name+'/item_graph_emb.csv', delimiter=',')
+    # GraphFeatures = np.loadtxt('/home/xxx/pom/data/ready/'+opt.dataset_name+'/item_graph_emb.csv', delimiter=',')
     # print(GraphFeatures.shape)
-    # with open('/home/czhaobo/pom/data/ready/'+opt.dataset_name+ '/attribute_dict.json', 'r') as json_file:
+    # with open('/home/xxx/pom/data/ready/'+opt.dataset_name+ '/attribute_dict.json', 'r') as json_file:
     #     attribute_dict = json.load(json_file)
     attribute_dict = None#{}
 

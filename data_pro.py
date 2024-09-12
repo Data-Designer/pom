@@ -4,7 +4,7 @@
 """
 # File       : data_pro.py
 # Time       ：29/4/2024 7:53 pm
-# Author     ：Chuang Zhao
+# Author     ：XXXX
 # version    ：python 
 # Description：Steam的格式有点东西哈
 # 这里的Stem的games_csv包含了一些游戏的原信息
@@ -36,7 +36,7 @@ import torch
 
 
 def get_bert_embeddings(texts, model_name='bert-base-chinese'):
-    save_directory = "/home/czhaobo/pom/data/ready/netease/"
+    save_directory = "/home/xxx/pom/data/ready/netease/"
 
     tokenizer = BertTokenizer.from_pretrained(save_directory)
     model = BertModel.from_pretrained(save_directory)
@@ -104,8 +104,8 @@ def assign_clusters_to_items(merge_df, num_clusters=6):
 class CommonArgs:
     min_num = 5
     tes_batch = 10 # 这样免得出现没有
-    root = '/home/czhaobo/pom/data/raw/'
-    root_to = '/home/czhaobo/pom/data/ready/'
+    root = '/home/xxx/pom/data/raw/'
+    root_to = '/home/xxx/pom/data/ready/'
     negnum = 99
 
 opt_com = CommonArgs()
@@ -738,7 +738,7 @@ def data_partition(dataset_name):
 
     for user in User:
         nfeedback = len(User[user])
-        if nfeedback < 3: # 这个3有点意思，就是排除掉1，2个item的用户； 只用作训练，不用作测试
+        if nfeedback < 3: 
             user_train[user] = User[user]
             user_valid[user] = []
             user_test[user] = []

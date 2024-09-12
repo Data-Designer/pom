@@ -4,7 +4,7 @@
 """
 # File       : ours.py
 # Time       ：30/4/2024 5:34 pm
-# Author     ：Chuang Zhao
+# Author     ：xxx
 # version    ：python 
 # Description：其实dataframe返回的是(item_id, time);  forward 多 DNN concat short, 1e-3;
 """
@@ -23,8 +23,8 @@ import time
 class Args:
     dataset_name = 'video'
     model_name = 'our'
-    model_path= '/home/czhaobo/pom/ckps/'
-    log_path = '/home/czhaobo/pom/logs/'
+    model_path= '/home/xxx/pom/ckps/'
+    log_path = '/home/xxx/pom/logs/'
     gpu_used = True
     batch_size = 512 # 1-24/256没差别; 256, 512
     lr = 0.002 # 0.003

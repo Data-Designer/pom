@@ -4,7 +4,7 @@
 """
 # File       : draw.py
 # Time       ：9/8/2024 2:59 pm
-# Author     ：Chuang Zhao
+# Author     ：xxxx
 # version    ：python 
 # Description： 绘图
 """

@@ -4,7 +4,7 @@
 """
 # File       : trainer.py
 # Time       ：6/5/2024 8:22 am
-# Author     ：Chuang Zhao
+# Author     ：xxxx
 # version    ：python 
 # Description：
 """
