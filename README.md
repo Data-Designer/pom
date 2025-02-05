@@ -4,7 +4,7 @@ Virtual Games via Disentangling Players’ Needs </h1>
 
 ## About Our Work
 
-Update: 2024/09/04: We have created a repository for the paper titled *Rational or Emotional? Next-item Recommendations in Virtual Games via Disentangling Players’ Needs*, which has been submitted to the *POM*. In this repository, we offer the original sample datasets, preprocessing scripts, and algorithm files to showcase the reproducibility of our work.
+Update: 2025/02/12: We have created a repository for the paper titled *Rational or Emotional? Next-item Recommendations in Virtual Games via Disentangling Players’ Needs*, which has been submitted to the *Journal on Computing*. In this repository, we offer the original sample datasets, preprocessing scripts, and algorithm files to showcase the reproducibility of our work.
 
 ![image-20240904095949527](https://s2.loli.net/2024/09/04/1jcyXSpGCiOkQNT.png)
 
